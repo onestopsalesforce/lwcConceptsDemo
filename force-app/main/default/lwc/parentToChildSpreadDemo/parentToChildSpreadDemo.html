@@ -1,0 +1,23 @@
+<template>
+    <lightning-card class = "card-background"  icon-name="standard:contact">        
+        <h1 slot="title" class="slds-text-color_destructive" >With Spread Directive </h1>
+
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                name="fullName"
+                label="Full Name"
+                onchange={handleChange}
+                value={personInfo.fullName}
+            ></lightning-input>
+            <lightning-input
+                name="fromCountry"
+                label="From Country"
+                onchange={handleChange}
+                value={personInfo.fromCountry}
+            ></lightning-input>
+        </div>
+        <div class="slds-p-around_medium">   
+            <c-child-data-binding lwc:spread={personInfo}></c-child-data-binding>
+        </div>
+    </lightning-card>   
+</template>

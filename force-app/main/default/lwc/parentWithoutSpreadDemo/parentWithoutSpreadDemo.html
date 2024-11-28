@@ -1,0 +1,24 @@
+<template>
+    <lightning-card title="Without Spread Directive" icon-name="standard:contact">
+        <div class="slds-var-m-around_medium">
+            <lightning-input
+                name="fullNameFromParent"
+                label="Full Name"
+                onchange={handleChange}
+                value={fullNameFromParent}
+            ></lightning-input>
+            <lightning-input
+                name="fromCountryFromParent"
+                label="From Country"
+                onchange={handleChange}
+                value={fromCountryFromParent}
+            ></lightning-input>
+        </div>
+        <div class="slds-p-around_medium"> 
+            <c-child-data-binding 
+                    full-name={fullNameFromParent}
+                    from-country={fromCountryFromParent}>
+            </c-child-data-binding>
+        </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+.custom-title {
+    color: rgb(202, 5, 5); /* Change title color to red */    
+    font-weight: bold; /* Make it bold */
+    text-align: center; /* Center align the title */    
+    margin: 0;
+}
+
+.card-background {
+    --sds-c-card-color-background: rgb(251, 251, 78); /* yellow background */
+}
+
+
+
+
+

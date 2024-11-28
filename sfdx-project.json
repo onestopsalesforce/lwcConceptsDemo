@@ -1,0 +1,12 @@
+{
+  "packageDirectories": [
+    {
+      "path": "force-app",
+      "default": true
+    }
+  ],
+  "name": "lwcConceptsDemo",
+  "namespace": "",
+  "sfdcLoginUrl": "https://resourceful-narwhal-pisjmu-dev-ed.trailblaze.my.salesforce.com/",
+  "sourceApiVersion": "62.0"
+}
